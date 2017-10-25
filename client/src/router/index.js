@@ -5,6 +5,7 @@ import Register from '@/components/Register'
 
 Vue.use(Router)
 
+// define routes
 export default new Router({
   routes: [
     {
