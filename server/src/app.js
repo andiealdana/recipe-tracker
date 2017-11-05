@@ -25,6 +25,7 @@ app.use(cors())
 require('./routes')(app)
 
 // sync defined models to db, then listen on port (and log port #)
+// user {force: true} as sync param to refresh database
 sequelize.sync()
   .then(() => {
     app.listen(config.port || 8081)

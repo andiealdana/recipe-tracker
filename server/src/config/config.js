@@ -12,5 +12,8 @@ module.exports = {
       // where to store sqlite file
       storage: './recipetracker.sqlite'
     }
+  },
+  authentication: {
+    jwtSecret: process.env.JWT_SECRET || 'secret'
   }
 }
